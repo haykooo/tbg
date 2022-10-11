@@ -4,6 +4,7 @@ import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./pages";
 import { Spin } from "antd";
+import "./ant_reset.css";
 import register, { unregister } from "./registerServiceWorker";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
