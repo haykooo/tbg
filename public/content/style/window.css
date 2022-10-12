@@ -50,8 +50,136 @@
     padding: 30px;
 }
 
-div#windowContent {padding: 0 40px;}
+.window_container .react-draggable {
+    border-radius: 20px;
+}
+
+
+/*react-draggable[mini]*/
+
+.window_container .special_selector[small] {
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    max-height: 100%;
+    max-width: 100%;
+    /*box-shadow: 0 0 0 1px var(--outline);*/
+    height: 450px;
+    width: 300px;
+    justify-content: flex-start;
+    border: 5px solid rgb(199 199 199 / 50%);
+    cursor: pointer;
+    background: #14191c;
+    transition: .125s;
+}
+
+
+.special_selector_container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    position: fixed;
+}
+
+.special_selector[small] back {
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.special_selector[small] img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.special_selector[small] picture {
+    display: flex;
+    height:100%;
+    width:100%;
+}
+
+.special_selector[small] header {
+    background: initial;
+    padding: 20px 35px;
+    cursor: pointer;
+    margin: 0;
+    height: auto;
+}
+
+
+.special_selector[small] wrapper {
+    padding: 0;
+}
+
+.special_selector[small]:hover {
+    transform: scale(1.08);
+    box-shadow: 0 5px 30px rgb(6 8 10 / 39%);
+    transition: .125s;
+}
+
+.special_selector[small]:hover img {
+    transform: scale(1.02);
+    filter: brightness(1.05);
+
+}
+
+/*.special_selector[small]:active img  {
+    transform: scale(1);
+}*/
+
+.special_selector[small] .window_cont, .special_selector[small] toolbar {
+    background: initial;
+}
+
+.special_selector[small] .window_cont {
+    padding: 0 20px !important;
+}
+
+.special_selector[small] .button {
+    padding: 0 40px;
+    opacity:0;
+}
+
+.special_selector[small] group {
+    width: 80%
+}
+
+.special_selector[small][main] text, .special_selector[small][main] h2 {
+    color: var(--text-color);
+}
+
+.special_selector[small][main] .button {
+    background-color: #000;
+}
+.special_selector[small][main] .button text {
+    color: var(--main-color);
+}
+
+
+.special_selector[small]:hover .button {
+    opacity: 1;
+    transition: .125s;
+    transform: translateY(10px);
+}
+
+.special_selector[small][main] {
+    border: 5px solid rgb(255 218 143 / 96%);
+    background: #ffde83;
+}
+
+div#windowContent {
+    padding: 0 40px;
+}
 /* ----- */
+
+
+
+
+
 /* message_container */
 .message_box {
     background: var(--context);

@@ -6,336 +6,171 @@
  *
  */
 
+
 :root {
-  --background: #fff;
-  --border-color: #e4e4e4;
-  --highlight: #f9f9f9;
-  --main-font: "Quicksand", "Arial", "Tahoma", sans-serif;
-  --heading-font: "Plus Jakarta Sans", "Tahoma", "Arial", sans-serif;
-  --text: 14px;
-  --radius-small: 12px;
-  --button-radius: 5px;
-  --input-color: rgba(136, 136, 136, 0.1);
-  --input-padding: 15px;
-  --input-radius: 5px;
-  --elevation: 0 0 50px 2px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
-  --elevation_2: 0 50px 110px -20px rgba(0, 0, 0, 0.3),
-    0 0 0 1px rgba(0, 0, 0, 0.05);
-  --elevation_3: 0 50px 110px -20px rgba(0, 0, 0, 0.3),
-    0 -50px 110px -20px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.05);
-  --elevation_4: 0 50px 110px -20px rgba(0, 0, 0, 0.3),
-    0 0 0 1px rgba(0, 0, 0, 0.05);
-  --outline: rgba(0, 0, 0, 0.1);
-  --ripple: rgba(0, 0, 0, 0.15);
-  --outline-dark: rgba(0, 0, 0, 0.1);
-  --fab: 50px;
-  --hover: rgba(136, 136, 136, 0.1);
-  --tip: #424242;
-  --context: #fff;
-  --over-color: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.05) 0%,
-    rgba(0, 0, 0, 0.05) 100%
-  );
-  --press-color: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.07) 0%,
-    rgba(0, 0, 0, 0.07) 100%
-  );
-  --overlay: rgba(234, 234, 234, 0.65);
-  --area: 60px;
-  --dark-color: #eae8e8;
-  --text-color: #000;
-  --gap: 10px;
-  --main-color: #ffd989;
-  --main-color-dark: #aa7300;
-  --input-button-height: 40px;
-  --input-button-radius: 5px;
+    --background: #fff;
+    --border-color: #e4e4e4;
+    --highlight: #f9f9f9;
+    --main-font: 'Quicksand','Arial','Tahoma', sans-serif;
+    --heading-font: 'Plus Jakarta Sans','Tahoma','Arial', sans-serif;
+    --text: 14px;
+    --radius-small: 12px;
+    --button-radius: 5px;
+    --input-color: rgba(136, 136, 136, 0.1);
+    --input-padding: 15px;
+    --input-radius: 5px;
+    --elevation: 0 0 50px 2px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
+    --elevation_2: 0 50px 110px -20px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.05);
+    --elevation_3: 0 50px 110px -20px rgba(0, 0, 0, 0.3), 0 -50px 110px -20px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.05);
+    --elevation_4: 0 50px 110px -20px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.05);
+    --outline: rgba(0, 0, 0, 0.1);
+    --ripple: rgba(0, 0, 0, 0.15);
+    --outline-dark: rgba(0, 0, 0, 0.1);
+    --fab: 50px;
+    --hover: rgba(136, 136, 136, 0.1);
+    --tip: #424242;
+    --context: #fff;
+    --over-color: linear-gradient(to top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%);
+    --press-color: linear-gradient(to top, rgba(0, 0, 0, 0.07) 0%, rgba(0, 0, 0, 0.07) 100%);
+    --overlay: rgba(234, 234, 234, 0.65);
+    --area: 60px;
+    --dark-color: #eae8e8;
+    --text-color: #000;
+    --gap: 10px;
+    --main-color: #ffd989;
+    --main-color-dark: #aa7300;
+    --input-button-height: 40px;
+    --input-button-radius: 5px;
+    --main-color-bright: #d08d00;
 }
 
-::-moz-selection {
-  /* Code for Firefox */
-  color: #fff;
-  background: var(--main-color);
+
+
+
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: var(--main-color);
 }
 
 ::selection {
-  color: #fff;
-  background: var(--main-color);
+    color: #fff;
+    background: var(--main-color);
 }
+
 
 /* button */
 
-.button {
-  touch-action: manipulation;
-  -webkit-user-drag: none;
-  height: 30px;
-  text-align: center;
-  border-radius: var(--button-radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding: 0 15px;
-  user-select: none;
-  font-weight: 700;
-  font-size: var(--text);
-  white-space: nowrap;
-  position: relative;
-  background: transparent; /*flex-shrink: 0;*/
-  overflow: hidden;
-  line-height: 30px;
-  text-decoration: none;
-}
-.button.rounded {
-  --button-radius: 30px;
-}
-.button * {
-  pointer-events: none;
-}
+.button {touch-action: manipulation;-webkit-user-drag: none;height: 30px;text-align: center;border-radius: var(--button-radius);display: flex;align-items: center;justify-content: center;cursor: pointer;padding: 0 15px;user-select: none;font-weight: 700;font-size: var(--text);white-space: nowrap;position: relative;background: transparent; /*flex-shrink: 0;*/overflow: hidden;line-height: 30px;text-decoration: none;}
+.button.rounded {--button-radius: 30px;}
+.button * {pointer-events: none;}
 
-.button:hover {
-  background-image: var(--over-color);
-}
+.button:hover {background-image: var(--over-color);}
 
-.button:active {
-  background-image: var(--press-color);
-}
+.button:active {background-image: var(--press-color);}
 
-.button.open {
-  background-image: var(--over-color);
-}
+.button.open {background-image: var(--over-color);}
 
 .button:active text,
 .button:active icon,
 .button:active badge,
 .button:active tip,
-.button:active dot {
-  transform: translateY(1px);
-}
+.button:active dot {transform: translateY(1px);}
 
-.button text {
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+.button text {width: 100%;overflow: hidden;text-overflow: ellipsis;}
 .button text,
 .button dot,
 .button tip,
 .button separator,
-svg[icon] {
-  z-index: 1;
-}
+ svg[icon] {
+    z-index: 1;
+ }
 
-a.button:not([outline="none"]) text {
-  text-decoration: underline;
-}
+a.button:not([outline='none']) text {text-decoration: underline;}
 
-.button icon {
-  margin: 0 0 0 -10px;
-}
+.button icon {margin: 0 0 0 -10px;}
 
 .button text ~ icon {
-  margin: 0 -10px 0 5px;
+    margin: 0 -10px 0 5px;
 }
 .button separator + icon {
-  margin: 0 -15px 0 -10px;
+    margin: 0 -15px 0 -10px;
 }
 
 .button.mini icon,
 .button.extra icon,
 .button.micro icon {
-  margin: auto;
+    margin: auto;
 }
 
-.button.mini {
-  width: 40px; /* height: 40px;*/
-  padding-left: 0;
-  padding-right: 0;
-  flex-shrink: 0;
-}
-.button.mini.rounded {
-  height: 40px;
-}
+.button.mini {width: 40px; /* height: 40px;*/padding-left: 0;padding-right: 0;flex-shrink: 0;}
+.button.mini.rounded {height: 40px;}
 
-.button.micro {
-  width: 30px;
-  height: 30px;
-  padding-left: 0;
-  padding-right: 0;
-  flex-shrink: 0;
-}
+.button.micro {width: 30px;height: 30px;padding-left: 0;padding-right: 0;flex-shrink: 0;}
 
-.button.accent {
-  box-shadow: inset 0 0 0 1.52px;
-}
+.button.accent {box-shadow: inset 0 0 0 1.52px;}
 
-.button.extra {
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  border-radius: 0;
-  margin: 0;
-}
+.button.extra {padding: 0;height: 100%;width: 100%;border-radius: 0;margin: 0;}
 
-.button.fab {
-  width: 60px;
-  height: 60px;
-  padding: 0;
-  border-radius: 60px;
-}
+.button.fab {width: 60px;height: 60px;padding: 0;border-radius: 60px;}
 
-.button.fab icon {
-  margin: auto;
-}
+.button.fab icon {margin: auto;}
 
-.primary {
-  background-color: var(--main-color);
-  color: #000;
-}
+.primary {background-color: var(--main-color);color:#000}
 
-.primary.facebook {
-  --main-color: #1877f2;
-}
-.primary.dark {
-  background-color: var(--main-color-dark);
-}
+.primary.facebook {--main-color: #1877f2;}
+.primary.dark {background-color: var(--main-color-dark);}
 
-.button.special {
-  background-color: #ededed;
-  color: #000;
-}
-.button.outline {
-  box-shadow: inset 0 0 0 1px var(--outline);
-  height: 30px;
-  background-color: var(--context);
-}
-.button.highlight {
-  background-color: var(--hover);
-}
-.button.orange {
-  background-color: var(--orange-color);
-  color: #fff;
-}
+
+.button.special {background-color: #ededed;color:#000;}
+.button.outline {box-shadow: inset 0 0 0 1px var(--outline);height: 30px;background-color: var(--context);}
+.button.highlight {background-color: var(--hover);}
+.button.orange {background-color: var(--orange-color);color: #fff;}
 
 .button.accent:hover,
-.button.accent:active {
-  box-shadow: none;
-  background-color: var(--main-color);
-  color: #fff;
-}
+.button.accent:active {box-shadow: none;background-color: var(--main-color);color: #fff;}
 
-.button.large {
-  min-height: 42px;
-  height: 42px;
-  padding: 0 35px;
-  --gap: 20px;
-  margin: 0;
-}
-.button.xlarge {
-  min-height: 50px;
-  height: 50px;
-  padding: 0 20px;
-  --gap: 20px;
-  margin: 0;
-}
-.button.large.rounded {
-  --button-radius: 20px;
-}
-.button.large separator[vertical] {
-  height: 40px;
-}
-.button.fit {
-  flex: 1;
-  max-width: 100%;
-}
-.button.wide {
-  width: 100%;
-}
-.button .material_ink {
-  border-radius: var(--button-radius);
-}
+.button.large {min-height: 42px;height: 42px;padding: 0 35px;--gap: 20px;margin: 0;}
+.button.xlarge {min-height: 50px;height: 50px;padding: 0 20px;--gap: 20px;margin: 0;}
+.button.large.rounded {--button-radius: 20px;}
+.button.large separator[vertical] {height: 40px;}
+.button.fit {flex: 1;max-width: 100%;}
+.button.wide {width: 100%;}
+.button .material_ink {border-radius: var(--button-radius);}
 
-.button[shrink="no"],
-button[shrink="no"] {
-  flex-shrink: 0;
-  overflow: visible;
-}
+.button[shrink='no'],
+ button[shrink='no'] {flex-shrink: 0;overflow: visible;}
 
-.button[disabled] {
-  opacity: 0.5;
-  cursor: default;
-  pointer-events: none;
-}
-button::-moz-focus-inner {
-  border: none;
-}
-.button.adaptive icon {
-  display: none;
-}
-.button.adaptive icon[visible] {
-  display: flex;
-}
+.button[disabled] {opacity: 0.5;cursor: default;pointer-events: none;}
+button::-moz-focus-inner {border: none;}
+.button.adaptive icon {display: none;}
+.button.adaptive icon[visible] {display: flex;}
 
-.button.error {
-  background: var(--error-color);
-  color: #fff;
-}
-.button tip {
-  font-weight: 500;
-}
+.button.error {background: var(--error-color);color: #fff;}
+.button tip {font-weight: 500;}
+
 
 /**/
 
-icon {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  flex-shrink: 0;
-  align-content: center;
-  justify-content: center;
-}
-icon svg {
-  margin: auto;
-}
+icon{width:30px; height:30px; display:flex; flex-shrink:0; align-content:center; justify-content:center;}
+icon svg {margin:auto}
+
 
 /**/
 
 input,
 button {
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  box-sizing: border-box;
-  border: none;
-  color: inherit;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-sizing: border-box;
+    border: none;
+    color: inherit;
 }
-input,
-select {
-  appearance: none;
-  height: 42px;
-  background: #fff;
-  border-radius: 5px;
-  padding: 0 15px;
-  color: #000;
-}
+input, select{appearance:none; height:42px; background:#fff; border-radius:5px;padding:0 15px;color:#000}
 
-cont {
-  position: relative;
-  display: flex; /*min-width: 280px;*/
-  min-height: 40px;
-  align-items: center;
-  margin: 10px;
-  flex-shrink: 0;
-  --gap: 0px;
-}
-cont[select] {
-  cursor: pointer;
-}
-cont[select] input {
-  cursor: pointer;
-  user-select: none;
-}
+cont { position: relative; display: flex; /*min-width: 280px;*/ min-height: 40px; align-items: center; margin: 10px; flex-shrink: 0; --gap: 0px }
+cont[select] {cursor:pointer; }
+cont[select] input {cursor:pointer;user-select:none;} 
 /*cont[select]:active input {transform:translateY(1px)} 
 */
 
@@ -344,341 +179,110 @@ cont input[type="tel"],
 cont input[type="password"],
 cont input[type="email"],
 cont textarea[placeholder],
-cont .k-widget .k-input {
-  border: none;
-  outline: none;
-  width: 100%;
-  min-height: 40px;
-  padding: 0 15px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  box-shadow: none;
-  background: transparent;
-  border-radius: 5px;
-}
+cont .k-widget .k-input { border: none; outline: none; width: 100%; min-height: 40px; padding: 0 15px; overflow: hidden; text-overflow: ellipsis; box-shadow: none; background: transparent; border-radius: 5px; }
 
-cont textarea[placeholder] {
-  overflow: auto;
-  height: auto;
-  overflow: overlay;
-  min-height: 90px;
-  line-height: 1.5;
-  margin-top: 10px;
-  resize: vertical;
-}
-cont textarea[resize] {
-  resize: vertical;
-  min-height: 170px;
-}
-cont textarea:focus {
-  box-shadow: none;
-  background: none;
-}
+cont textarea[placeholder] { overflow: auto; height: auto; overflow: overlay; min-height: 90px; line-height: 1.5; margin-top: 10px; resize: vertical; }
+cont textarea[resize] { resize: vertical; min-height: 170px }
+cont textarea:focus { box-shadow: none; background: none; }
 
-cont > input::placeholder {
-  opacity: 0;
-  transform: translateY(50%);
-  transition: 0.125s;
-}
-cont > input:focus::placeholder {
-  opacity: 0.5;
-  transform: none;
-}
+cont > input::placeholder { opacity: 0; transform: translateY(50%); transition: .125s }
+cont > input:focus::placeholder { opacity: .5; transform: none }
 
-cont > textarea::placeholder {
-  opacity: 0;
-  transform: translateY(50%);
-  transition: 0.125s;
-}
-cont > textarea:focus::placeholder {
-  opacity: 0.5;
-  transform: none;
-}
+cont > textarea::placeholder { opacity: 0; transform: translateY(50%); transition: .125s }
+cont > textarea:focus::placeholder { opacity: .5; transform: none }
 
-cont > .button {
-  margin: 0 5px;
-}
 
-cont[size="micro"] {
-  flex: 1.5;
-}
-cont[size="mini"] {
-  flex: 2.5;
-}
-cont[size="small"] {
-  flex: 3;
-}
-cont[size="medium"] {
-  flex: 4;
-}
-cont[large] {
-  flex: 5;
-}
+cont > .button { margin: 0 5px }
 
-cont input:-webkit-autofill ~ decor label text wrap {
-  transform: translateY(-50%);
-}
-cont input:-webkit-autofill ~ decor label text line {
-  transform: scaleX(0);
-}
+cont[size="micro"] { flex: 1.5 }
+cont[size="mini"] { flex: 2.5 }
+cont[size="small"] { flex: 3 }
+cont[size="medium"] { flex: 4 }
+cont[large] { flex: 5; }
 
-cont decor label text wrap {
-  transform: translateY(-50%);
-  transition: transform 0.225s, max-width 0.225s;
-  display: flex;
-  height: 100%;
-  align-items: center;
-  width: 100%;
-  overflow: hidden;
-}
-cont decor label text line {
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  transition: transform 0.125s;
-  transform-origin: right;
-}
+cont input:-webkit-autofill ~ decor label text wrap { transform: translateY(-50%); }
+cont input:-webkit-autofill ~ decor label text line { transform: scaleX(0); }
 
-cont decor {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-cont decor label {
-  display: flex;
-  width: 100%;
-  position: relative;
-  height: 100%;
-  padding: 0 10px;
-}
-cont decor label text {
-  align-items: center;
-  height: 40px;
-  display: flex;
-  max-width: 100%;
-  position: relative; /* transform: translateY(-50%); */ /* transition: transform .225s, max-width .225s; */
-}
-cont decor label text span {
-  padding: 0 5px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 
-cont decor label line {
-  height: 100%;
-  flex: 1;
-  box-shadow: inset 0 1.52px 0 0;
-}
-cont decor border {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  box-shadow: inset 0 0 0 1.52px;
-  border-radius: 5px;
-  pointer-events: none;
-  clip-path: polygon(
-    0% 0%,
-    0% 100%,
-    10px 100%,
-    10px 0,
-    calc(100% - 10px) 0,
-    calc(100% - 10px) 50%,
-    10px 50%,
-    10px 100%,
-    100% 100%,
-    100% 0%
-  );
-  content: "";
-  top: 0;
-  left: 0;
-}
+cont decor label text wrap { transform: translateY(-50%); transition: transform .225s, max-width .225s; display: flex; height: 100%; align-items: center; width: 100%; overflow: hidden; }
+cont decor label text line { position: absolute; width: 100%; transform: scaleX(0); transition: transform .125s; transform-origin: right }
+
+cont decor { position: absolute; width: 100%; height: 100%; pointer-events: none; }
+cont decor label { display: flex; width: 100%; position: relative; height: 100%; padding: 0 10px; }
+cont decor label text { align-items: center; height: 40px; display: flex; max-width: 100%; position: relative; /* transform: translateY(-50%); */ /* transition: transform .225s, max-width .225s; */ }
+cont decor label text span { padding: 0 5px; overflow: hidden; text-overflow: ellipsis; }
+
+cont decor label line { height: 100%; flex: 1; box-shadow: inset 0 1.52px 0 0; }
+cont decor border { position: absolute; width: 100%; height: 100%; box-shadow: inset 0 0 0 1.52px; border-radius: 5px; pointer-events: none; clip-path: polygon(0% 0%, 0% 100%, 10px 100%, 10px 0, calc(100% - 10px) 0, calc(100% - 10px) 50%, 10px 50%, 10px 100%, 100% 100%, 100% 0%); content: ""; top: 0; left: 0; }
 
 cont decor label line,
-cont decor border {
-  opacity: 0.4;
-}
+cont decor border { opacity: .4 }
 
 cont:hover decor label line,
-cont:hover decor border {
-  opacity: 0.85;
-}
+cont:hover decor border { opacity: .85 }
 
 cont input:disabled ~ decor label line,
-cont input:disabled ~ decor border {
-  opacity: 0.3;
-}
+cont input:disabled ~ decor border { opacity: .3 }
 
-cont input:placeholder-shown ~ decor label text wrap {
-  transform: none;
-}
+cont input:placeholder-shown ~ decor label text wrap { transform: none }
 
-cont input:placeholder-shown ~ decor label text line {
-  transform: none;
-}
+cont input:placeholder-shown ~ decor label text line { transform: none }
 cont input[disabled] ~ decor label text wrap,
 cont input[disabled] ~ decor label text line,
 cont textarea[disabled] ~ decor label text wrap,
-cont textarea[disabled] ~ decor label text line {
-  transition: none;
-}
+cont textarea[disabled] ~ decor label text line
+{transition:none}
 
-cont input:focus ~ decor {
-  color: #000;
-}
+
+cont input:focus ~ decor { color: #000; }
 cont input:focus ~ decor label line,
-cont input:focus ~ decor border {
-  opacity: 1;
-}
-cont input:focus ~ decor label text wrap {
-  transform: translateY(-50%);
-}
+cont input:focus ~ decor border { opacity: 1 }
+cont input:focus ~ decor label text wrap { transform: translateY(-50%); }
 
-cont input:focus ~ decor label text line {
-  transform: scaleX(0);
-}
+cont input:focus ~ decor label text line { transform: scaleX(0) }
 
 cont input.input-validation-error ~ decor,
-cont textarea.input-validation-error ~ decor {
-  color: var(--error-color);
-}
+cont textarea.input-validation-error ~ decor { color: var(--error-color) }
 
-cont input.input-validation-error ~ decor label line,
-cont input.input-validation-error ~ decor border {
-  opacity: 1;
-}
+cont input.input-validation-error ~ decor label line, cont input.input-validation-error ~ decor border {opacity: 1;}
 
-cont input:-webkit-autofill {
-  transition: background-color 5000s ease-in-out 5000s;
-}
+cont input:-webkit-autofill { transition: background-color 5000s ease-in-out 5000s; }
+
 
 /**/
-action[shrink] {
-  overflow: hidden;
-}
-action[right] {
-  margin-left: auto;
-  justify-content: flex-end;
-}
-action[space] {
-  padding: 0 10px;
-}
-action {
-  display: flex;
-  align-items: center;
-}
-action[column] {
-  flex-direction: column;
-}
-
+action[shrink] {overflow: hidden;}
+action[right] {margin-left: auto;justify-content: flex-end;}
+action[space] {padding: 0 10px;}
+action {display: flex;align-items: center;}
+action[column]{flex-direction:column;}
+action[gap] {gap: 10px;}
 /* form_fields */
 
-.form_fields {
-  box-sizing: border-box;
-  display: block;
-  position: relative;
-  padding: 5px;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  flex: 1;
-}
-.form_fields.large {
-  flex: 2;
-  overflow: hidden;
-}
-.form_fields.mini {
-  flex: 0.5;
-}
-.form_fields.micro {
-  flex: 0.25;
-}
-.form_fields.auto {
-  flex-grow: initial;
-  float: left;
-  width: auto;
-}
-.form_fields .data_label {
-  cursor: default;
-  flex: 1 100%;
-  font-weight: 700;
-  margin: 0 5px 5px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.form_fields .data_help {
-  cursor: default;
-  flex: 1 100%;
-  padding: 0 5px 5px;
-  opacity: 0.7;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  line-height: 1.5;
-}
-.form_fields .data_info {
-  cursor: default;
-  flex: 1 100%;
-  padding: 5px 5px 0 5px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+.form_fields{box-sizing:border-box;display:block;position:relative;padding:5px;width:100%;display:flex;justify-content:flex-start;flex-wrap:wrap;flex:1;}
+.form_fields.large{flex:2;overflow:hidden}
+.form_fields.mini{flex:.5}
+.form_fields.micro{flex:.25}
+.form_fields.auto{flex-grow:initial; float:left; width:auto}
+.form_fields .data_label{cursor:default;flex:1 100%;font-weight:700;margin:0 5px 5px;    overflow: hidden;text-overflow: ellipsis;}
+.form_fields .data_help{cursor:default;flex:1 100%;    padding: 0 5px 5px; opacity:.7;    overflow: hidden;text-overflow: ellipsis; line-height:1.5}
+.form_fields .data_info{cursor: default;flex: 1 100%;padding: 5px 5px 0 5px;overflow: hidden;text-overflow: ellipsis;}
 
-.form_fields .section_title {
-  display: flex;
-  align-items: center;
-  padding: 0 5px;
-}
-.form_fields .section_title > text {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  opacity: 0.5;
-}
-.form_fields .section_title > text[highlight] {
-  opacity: 1;
-}
-.form_fields .section_title > [classic] input + text {
-  padding-left: 0;
-}
-.form_fields .section_title > [classic] separator + text {
-  padding-right: 0;
-}
-.form_fields .data_label span {
-  font-weight: 400;
-  opacity: 0.5;
-  float: right;
-}
-.form_fields .data_label tip {
-  font-weight: 400;
-  opacity: 0.5;
-  padding: 0 10px;
-}
+.form_fields .section_title{display: flex; align-items: center; padding: 0 5px;  } 
+.form_fields .section_title > text{white-space:nowrap; overflow:hidden; text-overflow:ellipsis; opacity: .5;}
+.form_fields .section_title > text[highlight]{opacity:1}
+.form_fields .section_title > [classic] input + text{padding-left:0}
+.form_fields .section_title > [classic] separator + text {padding-right:0}
+.form_fields .data_label span{font-weight:400;opacity:.5;float:right;}
+.form_fields .data_label tip{font-weight:400;opacity:.5; padding:0 10px}
 
-.form_fields .data_label em {
-  margin-right: 5px;
-}
+.form_fields .data_label em{margin-right:5px;}
 
-.form_fields options {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  align-items: flex-start;
-}
+.form_fields options{display:flex;flex-direction:column;flex:1;align-items:flex-start;}
 
-wrap[group].form_fields {
-  flex-wrap: nowrap;
-}
-wrap[group].form_fields text {
-  margin-left: 5px;
-}
+wrap[group].form_fields {flex-wrap:nowrap}
+wrap[group].form_fields text{margin-left:5px}
 
-.form_fields .form_separator {
-  height: 1px;
-  box-shadow: inset 0 -1px var(--outline);
-  flex: 1;
-  margin: 15px 5px;
-}
+.form_fields .form_separator{height:1px;box-shadow:inset 0 -1px  var(--outline);flex:1;margin:15px 5px}
 
 .form_fields > input,
 .form_fields .input_cont,
@@ -688,65 +292,53 @@ wrap[group].form_fields text {
 .form_fields .Tokenize,
 .form_fields .option_bar,
 .form_fields .option_column,
-.form_fields > .tab_strip {
-  margin: 5px;
-  flex-grow: 1;
-  background: #eee;
-}
+.form_fields > .tab_strip
 
-.form_fields [small] {
-  flex-grow: 0;
-}
+{ margin:5px;flex-grow:1; background:#eee;}
 
-.form_fields .k-slider.k-widget {
-  margin-top: 10px;
-}
+
+.form_fields [small]{flex-grow:0}
+
+.form_fields .k-slider.k-widget
+{margin-top:10px}
+
 
 .form_fields > [checkbox],
 .form_fields > [radio],
 .form_fields > [classic] {
-  margin: 0 5px;
+    margin: 0 5px;
 }
 
-.field_group {
-  padding: 5px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.field_group .form_fields {
-  padding: 0;
-}
-.field_group[autosize] .form_fields {
-  width: unset;
-  flex-grow: unset;
-}
+.field_group{padding:5px;display:flex;flex-wrap: wrap;    align-items: center;}
+.field_group .form_fields{padding:0}
+.field_group[autosize] .form_fields{width:unset; flex-grow:unset}
 
-.form_fields > .k-widget.k-state-focused,
-.form_fields input textarea:focus,
+.form_fields > .k-widget.k-state-focused, .form_fields input
+textarea:focus,
 .input_cont input:focus ~ i,
 .input_cont .k-state-focused ~ i,
 .Tokenize.Focused,
 .simple.srch input:focus ~ i {
-  background: none;
-  box-shadow: 0 0 0 2px var(--main-color-dark), 0 0 0 1px var(--outline);
+    background: none;
+    box-shadow: 0 0 0 2px var(--main-color-dark), 0 0 0 1px var(--outline)
 }
+
 
 /* ----- */
 
 /*demo*/
 demo_wrap {
-  display: flex;
-  grid-gap: 5px;
-  padding: 20px;
-  gap: 10px;
-  flex-shrink: 0;
-  flex-wrap: wrap;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
-  box-shadow: 0 0 0 1px var(--border-color);
-  background: var(--background);
+    display: flex;
+    grid-gap: 5px;
+    padding: 20px;
+    gap: 10px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 0 1px var(--border-color);
+    background: var(--background);
 }
 /* ----- */
 
@@ -755,221 +347,221 @@ demo_wrap {
 [checkbox],
 [radio],
 [classic] {
-  display: flex;
-  align-items: center;
-  min-height: 30px;
-  white-space: nowrap;
-  position: relative; /*overflow: hidden;*/
-  cursor: pointer;
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+    white-space: nowrap;
+    position: relative; /*overflow: hidden;*/
+    cursor: pointer;
 }
 
-[checkbox]:active,
-[radio]:active,
-[classic]:active {
-  transform: translateY(1px);
-}
+    [checkbox]:active,
+    [radio]:active,
+    [classic]:active {
+        transform: translateY(1px);
+    }
 
-[checkbox] input,
-[radio] input,
-[classic] input {
-  display: none;
-}
+    [checkbox] input,
+    [radio] input,
+    [classic] input {
+        display: none;
+    }
 
-[checkbox] box {
-  height: 20px;
-  width: 36px;
-  display: flex;
-  position: relative;
-  border-radius: 10px;
-  flex-shrink: 0;
-  cursor: pointer;
-  box-shadow: inset 0 0 0 2px;
-}
+    [checkbox] box {
+        height: 20px;
+        width: 36px;
+        display: flex;
+        position: relative;
+        border-radius: 10px;
+        flex-shrink: 0;
+        cursor: pointer;
+        box-shadow: inset 0 0 0 2px;
+    }
 
-[checkbox] text,
-[radio] text,
-[classic] text {
-  padding: 0 10px;
-  white-space: nowrap;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  text-overflow: ellipsis;
-}
+    [checkbox] text,
+    [radio] text,
+    [classic] text {
+        padding: 0 10px;
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        text-overflow: ellipsis;
+    }
 
 box ink {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: -16px;
-  left: -16px;
-  border-radius: 25px;
-  overflow: hidden;
-  z-index: 1;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    border-radius: 25px;
+    overflow: hidden;
+    z-index: 1;
 }
 
-box ink:hover {
-  background-color: var(--hover);
-}
+    box ink:hover {
+        background-color: var(--hover);
+    }
 
 [checkbox] name,
 [radio] name {
-  padding: 0 10px 0 0;
+    padding: 0 10px 0 0;
 }
 
 [checkbox] check {
-  height: 10px;
-  width: 10px;
-  box-shadow: inset 0 0 0 7px;
-  top: 5px;
-  left: 5px;
-  transition: 0.25s;
-  background: white;
-  border-radius: 20px;
-  position: absolute;
+    height: 10px;
+    width: 10px;
+    box-shadow: inset 0 0 0 7px;
+    top: 5px;
+    left: 5px;
+    transition: 0.25s;
+    background: white;
+    border-radius: 20px;
+    position: absolute;
 }
 
 [checkbox]:not([minimal]):active box check {
-  width: 15px;
+    width: 15px;
 }
 
 [checkbox]:not([minimal]):active input:checked ~ box check {
-  left: 0px;
+    left: 0px;
 }
 
 [checkbox] input:checked ~ box {
-  box-shadow: inset 0 0 0 20px;
-  color: var(--main-color);
+    box-shadow: inset 0 0 0 20px;
+    color: var(--main-color);
 }
 
-[checkbox] input:checked ~ box check {
-  transform: translateX(16px);
-  box-shadow: inset 0 0 0 0px;
-}
+    [checkbox] input:checked ~ box check {
+        transform: translateX(16px);
+        box-shadow: inset 0 0 0 0px;
+    }
 
 [checkbox][simple] text:after {
-  content: "No";
+    content: 'No';
 }
 
 [checkbox][simple] input:checked ~ text:after {
-  content: "Yes";
+    content: 'Yes';
 }
 
 [checkbox] tip {
-  opacity: 0.5;
-  padding: 0 10px;
+    opacity: 0.5;
+    padding: 0 10px;
 }
 
 [checkbox][simple] tip:after {
-  content: "Off";
+    content: 'Off';
 }
 
 [checkbox][simple] input:checked ~ tip:after {
-  content: "On";
+    content: 'On';
 }
 
 [checkbox][minimal] box {
-  height: 2px;
-  width: 28px;
+    height: 2px;
+    width: 28px;
 }
 
 [checkbox][minimal] check {
-  height: 16px;
-  width: 16px;
-  display: flex;
-  top: -7px;
-  box-shadow: inset 0 0 0 2px, 0 0 0 3px var(--background);
-  background: var(--background);
-  left: 0;
+    height: 16px;
+    width: 16px;
+    display: flex;
+    top: -7px;
+    box-shadow: inset 0 0 0 2px, 0 0 0 3px var(--background);
+    background: var(--background);
+    left: 0;
 }
 
 [checkbox][minimal] input:checked ~ box {
 }
 
-[checkbox][minimal] input:checked ~ box check {
-  transform: translateX(12px);
-  box-shadow: inset 0 0 0 10px;
-}
+    [checkbox][minimal] input:checked ~ box check {
+        transform: translateX(12px);
+        box-shadow: inset 0 0 0 10px;
+    }
 
 /* ----- */
 
 /* radio */
 
 [radio] box {
-  display: flex;
-  position: relative;
-  border-radius: 10px;
-  flex-shrink: 0;
-  box-shadow: inset 0 0 0 2px;
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    flex-shrink: 0;
+    box-shadow: inset 0 0 0 2px;
 }
 
 [radio] box {
-  height: 18px;
-  width: 18px;
+    height: 18px;
+    width: 18px;
 }
 
 [radio] check {
-  height: 8px;
-  width: 8px;
-  transition: 0.25s;
-  background: white;
-  border-radius: 20px;
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  transform: scale(0);
-  background: var(--main-color);
+    height: 8px;
+    width: 8px;
+    transition: 0.25s;
+    background: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transform: scale(0);
+    background: var(--main-color);
 }
 
 [radio] input:checked ~ box {
-  color: var(--main-color);
+    color: var(--main-color);
 }
 
-[radio] input:checked ~ box check {
-  transform: scale(1);
-}
+    [radio] input:checked ~ box check {
+        transform: scale(1);
+    }
 
 /* ----- */
 
 [classic] box {
-  display: flex;
-  position: relative;
-  flex-shrink: 0;
-  box-shadow: inset 0 0 0 2px;
-  transition: 0.125s;
-  border-radius: 3px;
+    display: flex;
+    position: relative;
+    flex-shrink: 0;
+    box-shadow: inset 0 0 0 2px;
+    transition: 0.125s;
+    border-radius: 3px;
 }
 
 [classic] box {
-  height: 18px;
-  width: 18px; /*border-radius: 3px;*/
+    height: 18px;
+    width: 18px; /*border-radius: 3px;*/
 }
 
 [classic] check {
-  transform: scale(0);
-  top: 0;
-  left: 0;
-  height: 18px;
-  width: 18px;
-  transition: 0.125s;
-  background: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSJ3aGl0ZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCI+CiAgPHBhdGggIGQ9Ik0xMy45OTEsNy40NTZMOC40LDEzLDUuMDEsOS42MzcsNi40NzQsOC4xODMsOC40LDEwLjA5MywxMi41MjYsNloiLz4KPC9zdmc+");
+    transform: scale(0);
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    transition: 0.125s;
+    background: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSJ3aGl0ZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCI+CiAgPHBhdGggIGQ9Ik0xMy45OTEsNy40NTZMOC40LDEzLDUuMDEsOS42MzcsNi40NzQsOC4xODMsOC40LDEwLjA5MywxMi41MjYsNloiLz4KPC9zdmc+');
 }
 
 [classic] input:checked ~ box {
-  color: var(--main-color);
-  box-shadow: inset 0 0 0 10px;
+    color: var(--main-color);
+    box-shadow: inset 0 0 0 10px;
 }
 
-[classic] input:checked ~ box check {
-  transform: none;
-}
+    [classic] input:checked ~ box check {
+        transform: none;
+    }
 
 [classic] separator + box {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 [classic] box + separator {
-  margin-left: 20px;
+    margin-left: 20px;
 }
 /*[classic] box {margin-left:10px;}*/
 /**/
@@ -979,69 +571,116 @@ box ink:hover {
 /*filter options*/
 
 .options {
-  max-width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.options label input {
-  display: none;
-}
+    .options label input {
+        display: none;
+    }
 
-.options label wrap:hover,
-.filter_block .data_cell .input_cont:hover,
-.filter_result .filtered_item span:hover,
-.filter_block .Tokenize:hover {
-  background: rgba(136, 136, 136, 0.35);
-}
+    .options label wrap:hover,
+    .filter_block .data_cell .input_cont:hover,
+    .filter_result .filtered_item span:hover,
+    .filter_block .Tokenize:hover {
+        background: rgba(136, 136, 136, 0.35);
+    }
 
-.options label wrap:active text,
-.options label wrap:active icon,
-.filter_result .filtered_item span:active text {
-  transform: translateY(1px);
-}
+    .options label wrap:active text,
+    .options label wrap:active icon,
+    .filter_result .filtered_item span:active text {
+        transform: translateY(1px);
+    }
 
-.options label wrap text {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+    .options label wrap text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 
-.options label wrap icon {
-  margin: 0 0 0 -10px;
-}
+    .options label wrap icon {
+        margin: 0 0 0 -10px;
+    }
 
-.options label input:checked ~ wrap {
-  background: var(--main-color);
-  color: #fff;
-}
+    .options label input:checked ~ wrap {
+        background: var(--main-color);
+        color: #fff;
+    }
 
-.options label {
-  max-width: 100%;
-  margin: 3px;
-  float: left;
-  position: relative;
-  overflow: hidden;
-  border-radius: 30px;
-}
+    .options label {
+        max-width: 100%;
+        margin: 3px;
+        float: left;
+        position: relative;
+        overflow: hidden;
+        border-radius: 30px;
+    }
 
-.options label > wrap {
-  padding: 0 15px;
-  cursor: pointer;
-  height: 30px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  float: left;
-  background: rgba(136, 136, 136, 0.25);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 100%;
-}
+        .options label > wrap {
+            padding: 0 15px;
+            cursor: pointer;
+            height: 30px;
+            line-height: 30px;
+            display: flex;
+            align-items: center;
+            float: left;
+            background: rgba(136, 136, 136, 0.25);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+        }
 
-.site-dropdown-context-menu {
-  color: #777;
-  background: #f7f7f7;
-}
 /**/
+
+.tab_strip_tab container {min-height: 900px; width: 100%;}
+
+
+
+
+grid {
+    position: relative;
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+grid wrap {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+grid wrap item {
+    overflow: hidden;
+    cursor: pointer;
+    padding: 15px;
+    flex-direction: column;
+    transition: .125s;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    animation: appera forwards .125s;
+    background: var(--hover);
+    margin: 5px;
+    border-radius: 10px;
+}
+
+grid wrap item.selected {
+    background: var(--main-color);
+    color: #fff;
+}
+
+/*.react-draggable group text {
+    color: var(--text-color);
+}*/
+

@@ -6,7 +6,7 @@ const Search = () => {
       <wrapper>
         <group invert="">
           <h2 data-heading="" data-weight="800" data-size="large">
-            What Service Are You Looking For?
+            What Service Are You Looking For?{" "}
           </h2>
         </group>
         <space></space>

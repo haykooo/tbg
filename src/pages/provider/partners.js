@@ -9,11 +9,11 @@ const Partners = () => {
           <h2 data-heading="" data-weight="800" data-size="xx-large">
             Partners
           </h2>
-          <text light="" wrap="" wrap-line="">
-            Duis semper non metus vitae posuere. Cras lorem diam,
-            <br />
-            tempor sed bibendum vulputate, mollis et ipsum.
-          </text>
+          {/*<text light="" wrap="" wrap-line="">*/}
+          {/*    Duis semper non metus vitae posuere. Cras lorem diam,*/}
+          {/*    <br />*/}
+          {/*    tempor sed bibendum vulputate, mollis et ipsum.*/}
+          {/*</text>*/}
         </group>
         <space></space>
         <group gap="large">

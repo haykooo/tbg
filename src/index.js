@@ -19,6 +19,7 @@ const baseUrl = document.getElementsByTagName("base")[0].getAttribute("href");
 /*eslint no-extend-native: ["error", { "exceptions": ["Object"] }]*/
 var _toString = Object.prototype.toString;
 // toString override added to prototype of Foo class
+
 Object.prototype.toString = function () {
   try {
     switch (this.tagName) {
@@ -94,6 +95,7 @@ Object.prototype.toString = function () {
       case "AVATAR":
       case "PROFILE":
       case "BORDER":
+      case "INK":
       case "CONTENT":
         return "[object div]";
       default:

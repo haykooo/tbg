@@ -4,8 +4,20 @@ const Filter = () => {
   return (
     <section>
       <wrapper>
+        <group direction="column">
+          <h2 data-heading="" data-weight="800" data-size="xx-large">
+            Service Providers
+          </h2>
+          {/*<text light="" wrap="" wrap-line="">*/}
+          {/*    Duis semper non metus vitae posuere.*/}
+          {/*    <br />*/}
+          {/*    Cras lorem diam, tempor sed bibendum vulputate, mollis et ipsum.*/}
+          {/*</text>*/}
+        </group>
+        <space></space>
         <wrap layout="block">
           <service>
+            {" "}
             <group direction="column">
               <h4 data-heading="" data-weight="800" data-size="xx-large">
                 10k+
@@ -13,7 +25,7 @@ const Filter = () => {
               <h3 data-heading="" data-weight="800" data-size="large">
                 Personal Trainers
               </h3>
-            </group>
+            </group>{" "}
             <back>
               <picture>
                 <img alt="" src={require("../../res/1.jpg")} />
@@ -21,6 +33,7 @@ const Filter = () => {
             </back>
           </service>
           <service>
+            {" "}
             <group direction="column">
               <h4 data-heading="" data-weight="800" data-size="xx-large">
                 7k+
@@ -28,7 +41,7 @@ const Filter = () => {
               <h3 data-heading="" data-weight="800" data-size="large">
                 Chiropractors
               </h3>
-            </group>
+            </group>{" "}
             <back>
               <picture>
                 <img alt="" src={require("../../res/2.jpg")} />
@@ -36,6 +49,7 @@ const Filter = () => {
             </back>
           </service>
           <service>
+            {" "}
             <group direction="column">
               <h4 data-heading="" data-weight="800" data-size="xx-large">
                 10k+
@@ -43,7 +57,7 @@ const Filter = () => {
               <h3 data-heading="" data-weight="800" data-size="large">
                 Acupuncturist
               </h3>
-            </group>
+            </group>{" "}
             <back>
               <picture>
                 <img alt="" src={require("../../res/3.jpg")} />
@@ -51,6 +65,7 @@ const Filter = () => {
             </back>
           </service>
           <service>
+            {" "}
             <group direction="column">
               <h4 data-heading="" data-weight="800" data-size="xx-large">
                 3k+
@@ -58,7 +73,7 @@ const Filter = () => {
               <h3 data-heading="" data-weight="800" data-size="large">
                 Fitness Center / Gym
               </h3>
-            </group>
+            </group>{" "}
             <back>
               <picture>
                 <img alt="" src={require("../../res/6.jpg")} />
@@ -67,6 +82,7 @@ const Filter = () => {
           </service>
 
           <service>
+            {" "}
             <group direction="column">
               <h4 data-heading="" data-weight="800" data-size="xx-large">
                 3k+
@@ -74,7 +90,7 @@ const Filter = () => {
               <h3 data-heading="" data-weight="800" data-size="large">
                 Nutritionist / Dietitian
               </h3>
-            </group>
+            </group>{" "}
             <back>
               <picture>
                 <img alt="" src={require("../../res/4.jpg")} />
@@ -82,6 +98,7 @@ const Filter = () => {
             </back>
           </service>
           <service>
+            {" "}
             <group direction="column">
               <h4 data-heading="" data-weight="800" data-size="xx-large">
                 10k+
@@ -89,7 +106,7 @@ const Filter = () => {
               <h3 data-heading="" data-weight="800" data-size="large">
                 Physical Therapist
               </h3>
-            </group>
+            </group>{" "}
             <back>
               <picture>
                 <img alt="" src={require("../../res/7.jpg")} />
@@ -98,6 +115,7 @@ const Filter = () => {
           </service>
 
           <service>
+            {" "}
             <group direction="column">
               <h4 data-heading="" data-weight="800" data-size="xx-large">
                 10k+
@@ -105,7 +123,7 @@ const Filter = () => {
               <h3 data-heading="" data-weight="800" data-size="large">
                 Massage Therapist
               </h3>
-            </group>
+            </group>{" "}
             <back>
               <picture>
                 <img alt="" src={require("../../res/5.jpg")} />
@@ -113,6 +131,7 @@ const Filter = () => {
             </back>
           </service>
           <service>
+            {" "}
             <group direction="column">
               <h4 data-heading="" data-weight="800" data-size="xx-large">
                 3k+
@@ -120,7 +139,7 @@ const Filter = () => {
               <h3 data-heading="" data-weight="800" data-size="large">
                 Wellness / Med Spa
               </h3>
-            </group>
+            </group>{" "}
             <back>
               <picture>
                 <img alt="" src={require("../../res/8.jpg")} />
@@ -132,5 +151,4 @@ const Filter = () => {
     </section>
   );
 };
-
 export default Filter;

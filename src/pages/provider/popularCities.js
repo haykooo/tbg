@@ -9,11 +9,11 @@ const PopularCities = () => {
           <h2 data-heading="" data-weight="800" data-size="xx-large">
             Popular Cities
           </h2>
-          <text light="" wrap="" wrap-line="">
-            Duis semper non metus vitae posuere.
-            <br />
-            Cras lorem diam, tempor sed bibendum vulputate, mollis et ipsum.
-          </text>
+          {/*<text light="" wrap="" wrap-line="">*/}
+          {/*    Duis semper non metus vitae posuere.*/}
+          {/*    <br />*/}
+          {/*    Cras lorem diam, tempor sed bibendum vulputate, mollis et ipsum.*/}
+          {/*</text>*/}
         </group>
 
         <space></space>
